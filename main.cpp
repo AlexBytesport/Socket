@@ -1,19 +1,3 @@
-/* A simple server in the internet domain using TCP.
-myServer.c
-D. Thiebaut
-Adapted from http://www.cs.rpi.edu/~moorthy/Courses/os98/Pgms/socket.html
-The port number used in 51717.
-This code is compiled and run on the Raspberry as follows:
-   
-    g++ -o myServer myServer.c 
-    ./myServer
-
-The server waits for a connection request from a client.
-The server assumes the client will send positive integers, which it sends back multiplied by 2.
-If the server receives -1 it closes the socket with the client.
-If the server receives -2, it exits.
-*/
-
 #include <stdio.h>
 #include <sys/types.h> 
 #include <sys/socket.h>
